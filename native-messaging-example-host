@@ -1,0 +1,22 @@
+#!/usr/bin/env python
+
+import struct
+import sys
+
+while 1:
+    #The first four bytes from the app state the rest of the message's length.
+    text_length_bytes =  sys.stdin.read(4)
+    
+    #Unpack the exact length of the message from the app, and read it.
+    text_length = struct.unpack('i', text_length_bytes)[0]
+    sys.stdin.read(text_length)
+    
+    #The text to send back to the app.
+    text = '{"text": "Message successfully received."}'
+    
+    #Tell the app how long your message is.
+    sys.stdout.write(struct.pack('I', len(text)))
+    
+    #Send the message.  
+    sys.stdout.write(text)
+    sys.stdout.flush()      
