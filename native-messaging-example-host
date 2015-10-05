@@ -7,7 +7,7 @@ while 1:
     #The first four bytes from the app state the rest of the message's length.
     text_length_bytes =  sys.stdin.read(4)
     
-    #Unpack the exact length of the message from the app, and read it.
+    #Unpack the exact length of the message from the app, and read the message.
     text_length = struct.unpack('i', text_length_bytes)[0]
     sys.stdin.read(text_length)
     
