@@ -4,4 +4,4 @@ and back again.  Note in particular the  initial extraction of the message's len
 native-messaging-example-host with this one, and run the app.  This might aid those whose Python is rusty and wish to proceed in a different language.  
 
 File n-m-e-h-1 is alternative number 1.  This receives a message as before, but Python's struct is NOT used for the return message.  It works for a 'little endian' machine.  For a 'big endian' 
-machine it is required to pad the extra zeros before, not after as I have.  This 'lower-level' approach aids understanding. 
+machine it is required to pad the extra zeros before, not after as I have.  This 'lower-level' approach aids understanding.  If you want to run n-m-e-h-1, remember to rename it 'native-messaging-example-host'. 
