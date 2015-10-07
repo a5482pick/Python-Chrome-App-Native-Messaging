@@ -1,0 +1,27 @@
+#!/usr/bin/env python
+import struct
+import sys
+
+while 1:
+ #Read in the message from the app, as before.
+ text_length_bytes =  sys.stdin.read(4)
+ text_length = struct.unpack('i', text_length_bytes)[0]
+ messFromApp = sys.stdin.read(text_length).decode('utf-8')
+
+ #Specify the message to send back to the app.
+ text = '{"text": "Message received."}'
+ 
+ #Now translate the length of 'text' to the correct format WITHOUT using Python's struct function.
+ textLength = hex(len(text)).replace('0x','')
+ if len(textLength) < 1.5:
+   textLength = '0'+ textLength
+ temp = '\\x00\\x00\\x00'.replace('\\x','')
+ textLength = textLength + temp
+ textLength = textLength.decode('hex')
+
+ #Tell the app how long your message is.
+ sys.stdout.write(textLength)
+ 
+ #Send your message to the app.
+ sys.stdout.write(text)
+ sys.stdout.flush()
