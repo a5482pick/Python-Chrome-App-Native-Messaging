@@ -3,7 +3,7 @@ The Chrome App native messaging example https://chromium.googlesource.com/chromi
 and back again.  Note in particular the  initial extraction of the message's length for both input and output.  To use this code, replace the original 
 native-messaging-example-host with this one, and run the app.  
 
-(To run the following alternatives, rename them to native-messaging-example-host, then replace as before.)
+(To run the following alternatives, rename them 'native-messaging-example-host', then replace as before.  They were tested on Python 2.7.6: For version 3, decode('hex') won't work and a substitute function is needed.  On the plus side, Python 3.2 has int.from_bytes to turn bytes in to an integer, making things easier if you have it.)
 
 File n-m-e-h-1 is alternative 1.  This receives a message as before, but Python's struct.pack method is NOT used for the return message.  It works for 'little endian'.  For a 'big endian' 
 machine it is required to pad the extra zeros to the left. 
