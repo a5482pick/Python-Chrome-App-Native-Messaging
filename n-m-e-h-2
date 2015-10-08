@@ -8,7 +8,7 @@ while 1:
  #Change this length into a readable number WITHOUT using struct.
  text_length = sum(ord(c) << (i * 8) for i, c in enumerate(text_length_bytes[0][::-1]))
  
- #Now that we know the message's length, we can read it.
+ #Now that we know the message's length, we can read the message.
  messFromApp = sys.stdin.read(text_length)
 
  #We will send the received message (messFromApp) back to the app as string 'text'.
