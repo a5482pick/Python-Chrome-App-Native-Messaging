@@ -1,5 +1,5 @@
-Note: All code was tested on Python 2.7.6, for 'little endian'.  (For 'big endian', pack the returned message's length with the zeros to the left instead). Files n-m-e-h-1* are possible alternatives for different Python versions, and will 
-need to be renamed to native-messaging-example-host.  For simplicity and transparency, these alterations currently limit messages to size 0xFF. 
+Note: All code was tested on Python 2.7.6, for 'little endian'.  (For 'big endian', pack the returned message's length with the zeros to the left instead). Files n-m-e-h-1* 
+are possible alternatives (rename them to native-messaging-example-host) and if the main file doesn't work for you, n-m-e-h-1b is probably the way to go.  For simplicity and transparency, all code currently limits messages to size 0xFF. 
 
 The Chrome App native messaging example https://chromium.googlesource.com/chromium/src/+/master/chrome/common/extensions/docs/examples/api/nativeMessaging/host/ 
 (and linked to from https://developer.chrome.com/extensions/nativeMessaging) has here been reduced to a bare-bones example.  To highlight the key lines of the code, much of the code (e.g. the Python GUI) has been removed, to leave only the communication from the app, to the Python script, 
