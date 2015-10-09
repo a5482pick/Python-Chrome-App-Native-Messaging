@@ -10,4 +10,5 @@ struct.pack and struct.unpack.  This is to aid translation in to other languages
 
 File n-m-e-h-1b is an alternative to n-m-e-h-1 that decodes using the 'binascii' module.
 
-
+File n-m-e-h-1c uses decode('hex'), only works in Python 2.  If you're using Python 2, it's an alternative to n-m-e-h-1, n-m-e-h-1b. 
+For yet another Python 3 alternative, try base64.b16decode(...) from the 'base64' module.
