@@ -7,3 +7,5 @@ native-messaging-example-host with this one, and run the app.
 
 File n-m-e-h-1 is an alternative that can be renamed to native-messaging-example-host.  This version shows how to communicate with the app WITHOUT using Python's 
 struct.pack and struct.unpack.  This is to aid translation in to other languages.
+
+File n-m-e-h-1b makes n-m-e-h-1 more rigorous (one line is improved).
