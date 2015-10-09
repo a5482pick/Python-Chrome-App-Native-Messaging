@@ -2,7 +2,7 @@
 
 import sys
 import codecs
-
+import binascii
 while 1:
  
  #First four bytes from app notify us of the message's length.
@@ -26,7 +26,7 @@ while 1:
  
  #Pack the message length WITHOUT using struct.pack.
  #Additionally, use a function that's available in both Python 2 and Python 3.
- inLength = codecs.decode(inLength, "hex_codec")
+ inLength = binascii.unhexlify(inLength)
 
  #Write to the stream the message length and the message contents.
  sys.stdout.write(inLength)
