@@ -1,4 +1,4 @@
-Note: All code was tested on Python 2.7.6.  
+Note: All code was tested on Python 2.7.6, for 'little endian'.  For simplicity and transparency, these alterations currently limit messages to size 0xFF.  
 
 The Chrome App native messaging example https://chromium.googlesource.com/chromium/src/+/master/chrome/common/extensions/docs/examples/api/nativeMessaging/host/ 
 (and linked to from https://developer.chrome.com/extensions/nativeMessaging) has here been reduced to a bare-bones example.  To highlight the key lines of the code, much of the code (e.g. the Python GUI) has been removed, to leave only the communication from the app, to the Python script, 
