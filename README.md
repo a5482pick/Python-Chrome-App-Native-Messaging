@@ -16,4 +16,4 @@ For yet another Python 3 alternative, try base64.b16decode(...) from the 'base64
 Folder 'App': The Google-provided manifest uses code that has not been officially supported since June 2015, so may soon fail to function.  I have therefore modified 
 two of the files in the App folder to bring the example properly up to date.
 
-saveAppMessageToFile: A simple program to clarify that the message from the app may be saved.
+saveAppMessageToFile: A simple program to clarify that the message from the App may be saved.
