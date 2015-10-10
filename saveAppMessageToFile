@@ -1,0 +1,27 @@
+#!/usr/bin/env python
+import struct
+import sys
+
+#File to save message from app in.
+f=open("/PATH_TO_FILE/temp.txt","w")
+
+while 1:
+    
+    #Unpack and read the message from the app.
+    text_length_bytes =  sys.stdin.read(4)
+    text_length = struct.unpack('i', text_length_bytes)[0]
+    messFromApp = sys.stdin.read(text_length).decode('utf-8')
+    
+    #Write the message to your file.
+    f.write(messFromApp)
+    f.flush()
+
+    #Message to send back to the app.
+    text = '{"text": "Message received."}'
+
+    #Notify the app of the message's length.
+    sys.stdout.write(struct.pack('I', len(text)))  
+    
+    #Send the message.
+    sys.stdout.write(text)
+    sys.stdout.flush()      
