@@ -7,9 +7,9 @@ Note: All code was tested on Python 2.7.6, for 'little endian'.  (For 'big endia
 The following five files are five alternatives to the 'native-messaging-example-host' file of the original Google example.  (Note that some of them won't work with Python 3.)  Select the one you want to use, 
 rename it 'native-messaging-example-host', and replace accordingly:
 
-File native-messaging-example-host:  A skeletal version of the original example.  (Works in Python 2 only.)  
+File native-messaging-example-host:  A skeletal version of the original example.  (Works in Python 2 and Python 3.)  
 
-File n-m-e-h-1:  Communicates with the app WITHOUT using Python's struct.pack and struct.unpack.  This aids translation in to other languages.  (Works in Python 2 and Python 3).
+File n-m-e-h-1:  Communicates with the app WITHOUT using Python's struct.pack and struct.unpack.  This aids translation in to other languages.  (Works in Python 2 and 3.)
 
 File n-m-e-h-1b: Uses the 'binascii' module.  (Works in Python 2 and 3.)
 
