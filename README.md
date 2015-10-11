@@ -11,11 +11,11 @@ File native-messaging-example-host:  A skeletal version of the original example.
 
 File n-m-e-h-1:  Communicates with the app WITHOUT using Python's struct.pack and struct.unpack.  This aids translation in to other languages.  (Works in Python 2 and Python 3).
 
-File n-m-e-h-1b: Decodes using the 'binascii' module.  (Works in Python 2 and 3.)
+File n-m-e-h-1b: Uses the 'binascii' module.  (Works in Python 2 and 3.)
 
-File n-m-e-h-1c: Decodes with decode('hex').  (Works in Python 2 only.)
+File n-m-e-h-1c: Uses decode('hex').  (Works in Python 2 only.)
 
-File n-m-e-h-1d: Decodes using the base64 module.  (Works in Python 2 and 3.)
+File n-m-e-h-1d: Uses the base64 module.  (Works in Python 2 and 3.)
 
 
 
