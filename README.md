@@ -7,7 +7,7 @@ rename it 'native-messaging-example-host', and replace accordingly:
 
 File usingStruct:  A skeletal version of the original native-messaging-example-host.  
 
-File usingCodecs:  A version of native-messaging-example-host that uses the 'codecs' module.
+File usingCodecs:  A version of native-messaging-example-host that uses the 'codecs' module.  Additionally, the message is saved to file.
 
 File usingBinascii: A version of native-messaging-example-host that uses the 'binascii' module.
 
