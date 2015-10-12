@@ -27,8 +27,11 @@ while 1:
 
   #Calculate length of the message you are sending back, and do some formatting.
   inLength = hex(len(text)).replace('0x','')
+
+  #Pad with bytes, for little-endian.
   if len(inLength) < 1.5:
-    inLength = '0'+inLength
+     inLength = '0'+inLength
+
   inLength = inLength + '000000'
  
   #Pack the message length WITHOUT using struct.pack.
