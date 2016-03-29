@@ -22,5 +22,5 @@ File usingDecode: This version is limited to Python 2.
 Folder 'App': The Google-provided example uses deprecated code.  I have therefore modified manifest.json and created background.js, so the example here is up-to-date.  This is a complete collection of the requred app files.
 
 Folder 'Host':  For completeness, I have included the important host files from the example's link here, to cover for the eventuality that the link becomes broken.  These files are all totally unchanged from the original example.
-Note that com.google.chrome.example.echo.json should be in ~/.config/google-chrome/NativeMessagingHosts, and the HOST_PATH should be modified to point to one of the 5 modifications.  Ensure that all file permissions are appropriate.
+Note that com.google.chrome.example.echo.json should be in ~/.config/google-chrome/NativeMessagingHosts (or ~/.config/chromium/NativeMessagingHosts for Chromium), and the HOST_PATH should be modified to point to one of the 5 modifications.  Ensure that all file permissions are appropriate.
 
